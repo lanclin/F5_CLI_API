@@ -1,6 +1,6 @@
 from f5.bigip import ManagementRoot
 
-def cgn_test_op(mgm_ip, gtac_user, gtac_pw):
+def cgn_test_op(mgm_ip, user, pw):
 
     # Connect to the BigIP
     big = ManagementRoot(mgm_ip, gtac_user, gtac_pw)
@@ -37,9 +37,9 @@ def cgn_test_op(mgm_ip, gtac_user, gtac_pw):
       
 #mgm = 'x.x.x.x'
 user = 'username'
-pw = 'password'
+pass = 'password'
 
-#cgn_test_op(mgm, user, pw)
+#cgn_test_op(mgm, user, pass)
 
 mgm_l = ['x.x.x.x','y.y.y.y']
 num_cgn = len(mgm_l)
@@ -47,4 +47,4 @@ for i in range(0,num_cgn,1):
     print('='*50)
     print("Instance ==>",mgm_l[i])
     print('='*50)
-    cgn_test_op(mgm_l[i], user, pw)
+    cgn_test_op(mgm_l[i], user, pass)
