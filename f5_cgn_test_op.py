@@ -37,7 +37,7 @@ def cgn_test_op(mgm_ip, user, pw):
       
 #mgm = 'x.x.x.x'
 user = 'username'
-pass = 'password'
+pword = 'password'
 
 #cgn_test_op(mgm, user, pass)
 
@@ -47,4 +47,4 @@ for i in range(0,num_cgn,1):
     print('='*50)
     print("Instance ==>",mgm_l[i])
     print('='*50)
-    cgn_test_op(mgm_l[i], user, pass)
+    cgn_test_op(mgm_l[i], user, pword)
